@@ -94,8 +94,7 @@ Car.prototype.fill= function(gallons){
         + Should return a string "Playing with x", x being the favorite toy.
 */
 function Baby(name, age, favoriteToy) {
-  this.name= name;
-  this.age= age;
+  Person.call(this, name, age);
   this.favoriteToy= favoriteToy;
 }
 
@@ -109,10 +108,10 @@ Baby.prototype.play= function(){
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
+  1. Global Binding- where we enter `this` in a console.log method, this refers to all objects in JavaScript.
   2. Implicit Binding- which is the binding of the `this` keyword to the object name and properties.
-  3. 
-  4. 
+  3. New Binding- works when you use the `new` keyword on the contructor object when creating a new object.
+  4. Explicit Binding- works when using `.call` or `.apply` to override objects with other methods and properties.
 */
 
 
