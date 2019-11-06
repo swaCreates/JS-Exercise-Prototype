@@ -99,12 +99,18 @@ function Baby(name, age, favoriteToy) {
   this.favoriteToy= favoriteToy;
 }
 
+Baby.prototype.play= function(){
+  return `Playing with ${this.favoriteToy}`;
+}
+
+
+
 /* 
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
   1. 
-  2. 
+  2. Implicit Binding- which is the binding of the `this` keyword to the object name and properties.
   3. 
   4. 
 */
